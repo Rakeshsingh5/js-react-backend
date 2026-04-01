@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my code</title>
+</head>
+<body style = "background-color:#212121 ; color :#fff ">
+    <ul class = "lang">
+        <li>js</li>
+        
+    </ul>
+</body>
+<script>
+    function addlang(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}` 
+        document.querySelector('.lang').appendChild(li);
+    }
+    addlang ("python");
+    addlang("type");
+
+    function add_optilang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.lang').appendChild(li);
+    }
+    add_optilang("rust");
+
+    // edit 
+
+    const sec_lang = document.querySelector("li:nth-child(2)"); 
+    // secondLang.innerHTML= "mojo"  // could also work dirctly 
+     const newli = document.createElement('li'); //create a new li element
+     newli.appendChild(document.createTextNode("mojo")); //insert name 
+     sec_lang.replaceWith(newli)
+
+     const first = document.querySelector("li:first-child")
+     first.outerHTML = "<li> golang </li>";
+     
+
+</script>
+</html>
