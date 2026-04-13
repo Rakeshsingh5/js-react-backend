@@ -25,9 +25,16 @@ if(playGame){
 }
 
 function validGuess(guess){
-     if( isNaN(guess) ||  guess > 100 || guess <0){
-        alert("plese enter a valid no")
-     }
+    if( isNaN(guess) ||  guess > 100 || guess <0){
+    alert("plese enter a valid no")
+    }
+    else {
+        prev.push(guess);
+        if(numGuess==11){
+            
+            console.log("game over ")
+        }
+    }
     
 
 }
