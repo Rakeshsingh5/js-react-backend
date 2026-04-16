@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <img width = "200px"  id = "luffy" src="https://static.wikia.nocookie.net/onepiece/images/6/6d/Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.png/revision/latest?cb=20240306200817" alt="luffy" >
+
+    
+    
+</body>
+
+<script>
+    // document.getElementById('luffy').onclick = function(){
+    //     alert("hi");
+    // }
+    document.getElementById('luffy').addEventListener('click', function(e){
+        // alert("luffy is ready");
+        console.log(e);
+    },false)
+
+
+</script>
+</html>

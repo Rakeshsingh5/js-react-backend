@@ -32,7 +32,7 @@ function validGuess(guess){
     }
     else {
         prev.push(guess);
-        if(numGuess==10){
+        if(numGuess==11){
             displayguess(guess);
             displayMessage(`game over  . Random num was ${randnum}`)
             endgame();
@@ -64,7 +64,7 @@ function displayguess( guess){
     userInput.value = "";
     guessslot.innerHTML += `${guess}  `;
     
-    remain.innerHTML = `${10 - numGuess}`;
+    remain.innerHTML = `${11 - numGuess}`;
     numGuess++;
 
 }
