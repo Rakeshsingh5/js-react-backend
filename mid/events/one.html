@@ -19,19 +19,40 @@
     //  document.getElementById('luffy').onclick = function(){
     //      alert("hi");
     //  }
-    document.getElementById('image').addEventListener('click', function(e){
+    // document.getElementById('image').addEventListener('click', function(e){
 
-        console.log("clicked on images");
-        const remove= document.querySelector('#image') ;
-        remove(remove);
-         
-    },false)
+    //     console.log("clicked on images");
+    // },false)
 
 
-    document.getElementById('luffy').addEventListener('click', function(e){
-        console.log("luffy");
-        e.stopPropagation();
-    },false)
+    // document.getElementById('luffy').addEventListener('click', function(e){
+    //     console.log("luffy");
+    //     e.stopPropagation();
+    // },false)
+
+    document.querySelector( "#image").addEventListener('click' , function(e){
+        console.log(e.target);
+        const removeit = e.target;
+        removeit.remove();
+    })
+    document.querySelector( "#image").addEventListener('click' , function(e){
+        console.log(e.target);
+        const removeit = e.target;
+        removeit.remove();
+    })
+    document.querySelector( "#image").addEventListener('click' , function(e){
+        console.log(e.target);
+        const removeit = e.target;
+        removeit.remove();
+    })
+    document.querySelector( "#image").addEventListener('click' , function(e){
+        console.log(e.target);
+        const removeit = e.target;
+        removeit.remove();
+    })
+    
+
+    
    
 
 
